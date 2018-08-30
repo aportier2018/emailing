@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Exemple d'emailing responsive</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<style type="text/css">
+    /* CLIENT-SPECIFIC STYLES */
+    body, table, td, a{-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;} /* Prevent WebKit and Windows mobile changing default text sizes */
+    table, td{mso-table-lspace: 0pt; mso-table-rspace: 0pt;} /* Remove spacing between tables in Outlook 2007 and up */
+    img{-ms-interpolation-mode: bicubic;} /* Allow smoother rendering of resized image in Internet Explorer */
+
+    /* RESET STYLES */
+    img{border: 0; line-height: 100%; outline: none; text-decoration: none;}
+    table{border-collapse: collapse !important;}
+    body{height: 100% !important; margin: 0 !important; padding: 0 !important; width: 100% !important;}
+
+    /* iOS BLUE LINKS */
+    a[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+    }
+
+		@media only screen and (max-width:480px) {
+			table[class=w600] {
+				width: 320px !important;
+			}
+			td[class=w60],
+			td[class=w60] img {
+				width: 20px !important;
+			}
+			td[class=w480],
+			td[class=w480] img {
+				width: 280px !important;
+			}
+			td[class=img1] img,
+			td[class=img2] img {
+				display: none !important;
+			}
+			td[class=img1],
+			td[class=img2] {
+				background-position: center bottom;
+				background-repeat: no-repeat;
+			}
+			td[class=img1] {
+				width: 320px !important;
+				height: 243px;
+				background-image: url(http://www.simplon-charleville.fr/emailing/visu-rsp.jpg);
+			}
+			td[class=img2] {
+				width: 320px !important;
+				height: 180px;
+				background-image: url(http://www.simplon-charleville.fr/emailing/anim.gif);
+				background-size: contain;
+			}
+			td[class=txt2] {
+				font-size: 10px !important;
+			}
+		}
+	</style>
+</head>
+
+<body bgcolor="#ffffff" leftmargin="0" topmargin="0" rightmargin="0" bottommargin="0">
+	<div align="center" style="background-color:#ffffff">
+		<table style="display:inline-table;" border="0" cellpadding="0" cellspacing="0" width="600" bgcolor="#ffffff" class="w600">
+<!-- texte griser du haut -->
+      <tr>
+				<td colspan="3" height="30" bgcolor="#f1f1f1" align="center" valign="middle" class="txt2" style="padding:0;margin:0;font-family:Arial, Helvetica, sans-serif;font-size:12px;font-weight:normal;color:#7f7f7f;line-height:normal;">Si vous ne parvenez pas &agrave; lire cet email, <a href="#" target="_blank" style="color:#7f7f7f;text-decoration:underline;"><span style="color:#7f7f7f;">cliquez ici</span></a> (lien vers la page HTML)</td>
+			</tr>
+
+
+<!-- image de l'avion dans son entier -->
+			<tr>
+				<td colspan="3" align="center" height="125"><img src="image/header-avion.jpg" width="100%" height="125" alt="avion" border="0" style="display:block;" /></td>
+			</tr>
+       <tr>
+        <td colspan="2"><img src="image/spacer.gif" width="1" height="30" border="0" style="display:block;" /></td>
+        <td height="30"><img src="image/spacer.gif" width="1" height="30" border="0" style="display:block;" /></td>
+      </tr>
+<!-- texte le dernier vol + apostrophe -->
+      <tr>
+        <td width="60" class="w60"><img src="image/spacer.gif" width="60" height="40" border="0" style="display:block;" /></td>
+        <td width="480" class="w480" border="0" style="display:block; font-family:Arial, Helvetica, sans-serif;color:#e61700; font-size:40px;" >Le dernier vol du 747</td>
+        <td width="60" height="40" class="w60"><img src="image/apostrophe.gif" width="60" height="40" border="0" style="display:block;" /></td>
+      </tr>
+
+      <!--texte "le mythique.."  -->
+      <tr>
+        <td colspan="3" align="center" height="125" style="padding:0;margin:0;font-family:Arial, Helvetica, sans-serif;font-size:14px;font-weight:normal;line-height:normal;">Le mythique Boeing 747 de la flotte d'Air France a fait son dernier vol commercial, le 11 janvier 2016, sur la ligne &quot;Mexico-Paris&quot;</td>
+      </tr>
+
+      <!-- le nez avion et texte sur 2col  -->
+			<tr>
+				<td ><img src="image/visu-avion.jpg" width="256" height="176" border="0" style="display:block;" /></td>
+
+				<td>
+          <p align="justify" style="padding:10px;margin:0;font-family:Arial, Helvetica, sans-serif;font-size:14px;font-weight:normal;color:#83878a;line-height:normal;">Retrouvez ce dernier vol dans un magnifique coffret, le &quot;Coffre 747&quot; composé d'un livre, d'une pi&egrave;ce du 747 (et de son certificat), du patch sp&acute;cial 747 &quot;dernier vol&quot;, du livret t&acute;moignage et des consignes de s&acute;curit&acute; 747-400.</p>
+          <p align ="center" style="padding:0;margin:0;font-family:Arial, Helvetica, sans-serif;font-size:16px;font-weight:normal;color:#e61700;line-height:20px;"> Un magnifique coffret<br/>pour les amoureux du 747 !</p>
+        </td>
+      </tr>
+      <!-- texte "un morceau ...-->
+    <tr>
+        <td colspan="3" align="center" height="125" style="padding:0;margin:0;font-family:Arial, Helvetica, sans-serif;font-size:35px;font-weight:normal;line-height:50px;">Un morceau du fuselage<br/>du F-GITD à l'intérieur !</td>
+      </tr>
+<!-- coffret -->
+		<tr>
+				<td height="1">
+          <p align="center" style="padding:10px;margin:0;font-family:Arial, Helvetica, sans-serif;font-size:14px;font-weight:normal;color:#0bacfd;line-height:normal;border: 1px solid #0bacfd; background-color:#ebedea;"> <a href="#" target="_blank" style="color:#0bacfd;text-decoration:none;"><span>COMMANDEZ VOTRE COFFRET</span></a></p>
+          <p style="color:#e61700; font-family:Arial, Helvetica, sans-serif;font-size:14px;font-weight:normal;">ATTENTION 2000 EXEMPLAIRES !</p>
+          <p style="color:#e61700;font-family:Arial, Helvetica, sans-serif;font-size:14px;font-weight:normal;text-transform: uppercase;">tirage limité !</p>
+
+
+        </td>
+				<td height="1"><img src="image/visu-coffret.jpg" width="282" height="201" border="0" style="display:block;" /></td>
+			</tr>
+
+
+			<tr>
+				<td colspan="3" height="75" bgcolor="#f1f1f1" align="center" valign="middle" class="txt2" style="padding:0;margin:0;font-family:Arial, Helvetica, sans-serif;font-size:12px;font-weight:normal;color:#7f7f7f;line-height:normal;">Le respect de votre vie priv&eacute;e est important pour nous.<br />Vous pouvez consulter notre politique vie priv&eacute;e en <a href="#" target="_blank" style="color:#7f7f7f;text-decoration:underline;"><span style="color:#7f7f7f;">cliquant ici</span></a>.<br
+					/>Vous ne souhaitez plus recevoir notre newsletter&nbsp;? <a href="#" target="_blank" style="color:#7f7f7f;text-decoration:underline;"><span style="color:#7f7f7f;">D&eacute;sabonnez-vous ici</span></a>.</td>
+			</tr>
+		</table>
+	</div>
+</body>
+
+</html>
